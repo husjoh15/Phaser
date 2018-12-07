@@ -35,7 +35,6 @@ var config = {
 var player;
 var stars;
 var bombs;
-var cola;
 var platforms;
 var cursors;
 var score = 0;
@@ -77,7 +76,6 @@ function create ()
     player = this.physics.add.sprite(100, 450, 'dude');
 
     //  Player physics properties. Give the little guy a slight bounce.
-    player.setBounce(0.2);
     player.setCollideWorldBounds(true);
 
     //  Our player animations, turning, walking left and walking right.
